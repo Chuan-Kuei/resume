@@ -964,12 +964,16 @@ body {
 .icon-meetup .path2:before {
   margin-left: 0;
 }
+  
+@page { size: auto;  margin: 0mm; }
+  
 @media print {
   a[href]:after {
     content: none !important;
   }
   .profile-card {
     text-align: center;
+    min-height: 200px;
   }
   .profile-pic {
     display: inline-block;
