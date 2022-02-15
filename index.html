@@ -976,11 +976,15 @@ body {
   margin-left: 0;
 }
 @media print {
+  @page { size: auto;  margin: 0mm; }
+
+
   a[href]:after {
     content: none !important;
   }
   .profile-card {
     text-align: center;
+    min-height: 200px;
   }
   .profile-pic {
     display: inline-block;
